@@ -1,0 +1,339 @@
+@import 'utilities.css';
+:root{
+    --primary:#E4003B;
+    --pure:#ffffff;
+    --secondary:#EDF0F2;
+    --dark:#000000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smothing:antialiased;
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Teko', sans-serif;
+}
+header{
+    background-color: var(--secondary);
+}
+.logo img{
+    width: 150px;
+    padding: 1rem 0;
+}
+header nav .left a,
+header nav .right a{
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--dark);
+    transition: all .3s ease;
+}
+header nav .left a:hover,
+header nav .right a:hover{
+    color: var(--primary);
+}
+.logo{
+    margin-right:3rem;
+}
+header nav .right .en {
+    border-left: 2px solid var(--dark);
+    padding-left: 2rem;
+
+}
+header nav .right a img{
+    width: 30px;
+    height: 30px;
+    margin-top: 0.5rem;
+}
+header .hero-box .right img{
+    width: 750px;
+    object-fit: cover;
+    padding-left: 2rem;
+}
+header .hero-box .left .right-side h1{
+    font-size: 10rem;
+    color: var(--primary);
+    line-height: 8rem;
+    text-transform: uppercase;
+}
+header .hero-box .left .right-side h1+p{
+    font-size: 2rem;
+
+    font-weight: 200;    
+}
+header .hero-box .left .left-side{
+    flex-direction: column;
+}
+header .hero-box .left .left-side h3{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+header .hero-box .left .left-side .icons a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+header .hero-box .left .left-side .icons{
+    flex-direction: column;
+    margin-top: 5rem;
+    padding-left: 1rem;
+}
+header .hero-box .left .right-side {
+    margin-left: 2rem;
+}
+header .hero-box .left .left-side .icons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    transition: all .3s ease;
+}
+header .hero-box .left .left-side .icons a:hover{
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+section.challenge .container .card-wrapper .card .img-content img{
+    margin-right: 1rem;
+    width: 300px;
+}
+.section-heading{
+    font-size: 3rem;
+    padding: 1.5rem 0;
+    text-align: left;
+}
+section.challenge .container .card-wrapper .card .text-content h4{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--primary);
+}
+section.challenge .container .card-wrapper .card .text-content h2{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.challenge .container .card-wrapper .card .text-content p{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 200;
+}
+section.challenge .container .card-wrapper .card{
+    margin-bottom: 2rem;
+}
+.icon-rt{
+    transition: .6s ease;
+}
+.icon-rt:hover{
+    transform: rotate(45deg);
+}
+#search{
+    height: 30px;
+    border: none;
+    padding-left: 1rem;
+    outline: none;
+}
+.hidden{
+    display: none;
+}
+section.missions .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+    grid-gap: 1rem;
+    
+}
+section.missions .container .card-wrapper .card img{
+width: 350px;
+}
+section.missions .container .card-wrapper .card h2{
+    position: absolute;
+    top: 0;
+    z-index: 0;
+    font-size: 6rem;
+    text-align: center;
+    color: var(--primary);
+    z-index: -1;
+    line-height: 1.2;
+    text-transform: uppercase;
+    padding-left: 2rem;
+}
+section.missions .container .card-wrapper .card{
+    border-top: 1px dashed black;
+    border-left:1px dashed black ;
+    border-right: 1px dashed black;
+    padding-top: 2rem;
+}
+section.missions .container .card-wrapper .card .text-content{
+    text-align: center;
+    background-color: var(--secondary);
+}
+section.missions .container .card-wrapper .card .text-content h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+section.missions .container .card-wrapper .card .text-content h3{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}section.missions .container .card-wrapper .card .text-content p{
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1;
+    padding: 0 1rem;
+}
+section.result .container .right img{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+}
+section.result .container .mid h1{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    padding-top: 2rem;
+}
+section.missions{
+    margin-bottom: 2rem;
+}
+section.result .container .left{
+    padding-top: 2rem;
+    text-align: center;
+}
+section.result .container .left h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+section.result .container .left h1{
+    font-size: 15rem;
+    color: var(--primary);
+    margin-top: -3rem;
+}
+section.result .container .left h2{
+    text-align: left;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: 500;
+}
+.btn{
+    font-size: 1.5rem;
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    padding: .4rem 0;
+    font-family: 'Teko', sans-serif;
+    transition: all .3s ease;
+}
+.btn:hover{
+    color: var(--pure);
+    cursor: pointer;
+    background-color: var(--primary);
+}
+section.result .container .right {
+    position: relative;
+}
+.red-box{
+    position: absolute;
+    width: 50%;
+    height: 550px;
+    border: 8px solid var(--primary);
+    top: 2rem;
+    left: 13rem;
+}
+section.advice .container .right img{
+    width: 900px;
+    object-fit: cover;
+}
+section.advice .container .left h1{
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    padding-top: 2rem;
+}
+section.advice .container .right{
+    position: relative;
+}
+section.advice .container .right .survival-mode{
+    position: absolute;
+    top:8rem;
+    background-color: var(--secondary);
+    padding: 1rem 2rem;
+    text-align: center;
+    width: 300px;
+}
+section.advice .container .right .survival-mode h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+section.advice .container .right .survival-mode p{
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+section.advice .container{
+    background-color: var(--secondary);
+}
+section.advice .container .right .survival-mode .btn{
+    padding: 0 2rem;
+}
+section.gallery .container .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+section.gallery .container .card-wrapper .card img{
+    width: 300px;
+    object-fit: cover;
+}
+section.gallery .container .card-wrapper .card{
+    position: relative;
+}
+section.gallery .container .card-wrapper .card .text-content{
+    position: absolute;
+    bottom: 0;
+    color: var(--pure);
+    line-height: 1.1;
+    padding: 0 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+section.gallery .container .card-wrapper .text-content-right{
+    background-color: var(--secondary);
+    text-align: center;
+}
+section.advice{
+    margin-bottom: 2rem;
+}
+section.gallery .container .card-wrapper h1{
+    color: var(--primary);
+    font-size: 5rem;
+    line-height: 1.1;
+    margin-bottom: 2rem;
+}
+section.gallery{
+    margin-bottom: 2rem;
+}
+footer{
+    background: url(../images/footer.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: 50%;
+    height: 250px;
+}
